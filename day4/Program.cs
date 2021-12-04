@@ -4,11 +4,13 @@
     {
         public static void Main()
         {
+            //Read input and get the numbers
             string[] inputs = File.ReadAllLines("input.txt");
             string[] number = inputs[0].Split(',');
 
             List<BingoBoard> boards = new();
 
+            //Skip the first 2 lines and start creating boards
             for (int i = 2; i < inputs.Length; i += 6)
             {
                 if (string.IsNullOrEmpty(inputs[i])) continue;
@@ -37,11 +39,6 @@
                 }
 
             }
-            foreach (var b in boards)
-            {
-
-            }
-
         }
     }
     public class BingoBoard
@@ -88,7 +85,6 @@
                 if (horizontal == 5 || vertical == 5)
                     won = true;
             }
-
             if (won)
             {
                 int retNum = 0;
@@ -96,7 +92,7 @@
                 {
                     for (int j = 0; j < 5; j++)
                     {
-                        if (!bingo[i, j])
+                        if (!bingo[i, j])﻿
                         {
                             retNum += board[i, j];
                         }
