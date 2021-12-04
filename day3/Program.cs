@@ -76,22 +76,6 @@ namespace Program
 
                 Console.WriteLine(Convert.ToInt32(workingData[0],2)* Convert.ToInt32(invertedWorkingData[0],2));
             }
-            // int commenOut = 0;
-            // for (int i = output.Length - 1; i >= 0; i--)
-            // { 
-            //     commenOut += (int)Math.Pow(output[i] * 2,((output.Length - 1) - i));
-            //     Console.WriteLine($"{output[i]}^{(1+ (output.Length - 1) - i)}");
-            // }
-            // Console.WriteLine(commenOut);
-            // commenOut = 0;
-            // for (int i = output.Length - 1; i >= 0; i--)
-            // { 
-            //     Console.Write((output[i] == 1 ? 0 : 1));
-            //     commenOut += (int)Math.Pow((output[i] == 1 ? 0 : 1) * 2,((output.Length - 1) - i));
-            //    // Console.WriteLine($"{output[i]}^{(1+ (output.Length - 1) - i)}");
-            // } 
-            // Console.WriteLine(commenOut);
-
         }
 
     }
