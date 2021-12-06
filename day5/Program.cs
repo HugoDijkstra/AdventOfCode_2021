@@ -6,7 +6,9 @@
         {
             string[] input = File.ReadAllLines("input.txt");
             List<Vector2> points = new List<Vector2>();
+            points.Capacity = 170366;
             List<Vector2> overlaps = new List<Vector2>();
+            overlaps.Capacity = 19663;
             foreach (var line in input)
             {
                 if (string.IsNullOrEmpty(line))
