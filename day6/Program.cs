@@ -24,7 +24,7 @@
                 nextDay[6] += fishes[0];
                 nextDay.Add(fishes[0]);
                 fishes = nextDay;
-                Console.WriteLine($"At day {i + 1} there were {fishes[0] + fishes[1] + fishes[2] + fishes[3] + fishes[4] + fishes[5] + fishes[6] + fishes[7] + fishes[8]} Lanternfish");
+                Console.WriteLine($"At day {i + 1} there were {fishes.Sum<ulong>(item =>{ return (double)item;})} Lanternfish");
                
                
                 //Old way took 16GB of ram after 170 days
